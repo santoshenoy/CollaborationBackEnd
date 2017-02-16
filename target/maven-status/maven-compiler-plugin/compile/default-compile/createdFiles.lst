@@ -1,0 +1,8 @@
+com\niit\CollaborationBackEnd\model\BaseDomain.class
+com\niit\CollaborationBackEnd\dao\Test_UserDAO.class
+com\niit\CollaborationBackEnd\model\User.class
+com\niit\CollaborationBackEnd\config\ApplicationContextConfig.class
+com\niit\CollaborationBackEnd\model\Test_User.class
+com\niit\CollaborationBackEnd\dao\UserDAO.class
+com\niit\CollaborationBackEnd\daoImpl\UserDAOImpl.class
+com\niit\CollaborationBackEnd\daoImpl\Test_UserDAOImpl.class
