@@ -11,20 +11,10 @@ public interface UserDAO {
 
 	public void save(User user);
 
-	//public boolean update(User user);
+	public void update(User user);
 
-	//public boolean delete(User user);
+	public void delete(String id);
 
 	public List<User> list();
-
-	//public User get(String id);
-
-	//public User delete(String id);
-
-	//public User authenticate(String name, String Password);
-
-	//public void setOffLine(String userID);
-
-	//public void setOnline(String userID);
 
 }

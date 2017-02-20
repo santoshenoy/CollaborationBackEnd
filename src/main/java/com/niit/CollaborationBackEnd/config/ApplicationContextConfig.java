@@ -16,7 +16,7 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.niit.CollaborationBackEnd.model.Test_User;
+import com.niit.CollaborationBackEnd.model.Blog;
 import com.niit.CollaborationBackEnd.model.User;
 
 @ComponentScan("com.niit")
@@ -54,9 +54,8 @@ public class ApplicationContextConfig
 				"hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
 		//sessionBuilder.setProperty("hibernate.hbm2ddl.auto", "update");
 		sessionBuilder.setProperty("hibernate.show_sql", "true");
-		sessionBuilder.addAnnotatedClass(Test_User.class);
 		sessionBuilder.addAnnotatedClass(User.class);
-		
+		sessionBuilder.addAnnotatedClass(Blog.class);
 		
 
 		//sessionBuilder.addAnnotatedClass(UserDetails.class);
