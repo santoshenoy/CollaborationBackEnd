@@ -2,7 +2,10 @@ com\niit\CollaborationBackEnd\model\BaseDomain.class
 com\niit\CollaborationBackEnd\model\Blog.class
 com\niit\CollaborationBackEnd\daoImpl\BlogDAOImpl.class
 com\niit\CollaborationBackEnd\model\User.class
+com\niit\CollaborationBackEnd\daoImpl\JobDAOImpl.class
 com\niit\CollaborationBackEnd\config\ApplicationContextConfig.class
+com\niit\CollaborationBackEnd\dao\JobDAO.class
 com\niit\CollaborationBackEnd\dao\UserDAO.class
 com\niit\CollaborationBackEnd\daoImpl\UserDAOImpl.class
+com\niit\CollaborationBackEnd\model\Job.class
 com\niit\CollaborationBackEnd\dao\BlogDAO.class

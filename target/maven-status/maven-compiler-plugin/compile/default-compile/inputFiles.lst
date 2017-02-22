@@ -1,7 +1,10 @@
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\User.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\BaseDomain.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\BlogDAOImpl.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\JobDAOImpl.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Job.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\UserDAO.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\JobDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Blog.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\config\ApplicationContextConfig.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\BlogDAO.java
