@@ -34,8 +34,10 @@ public class JobDAOImpl implements JobDAO {
 	}
 
 	@Transactional
-	public void delete(String id) {
-		sessionFactory.getCurrentSession().delete(id);
+	public void delete(int id) {
+		Job jobtodelete = new Job();
+		jobtodelete.setId(id);
+		sessionFactory.getCurrentSession().delete(jobtodelete);
 	}
 
 	@Transactional

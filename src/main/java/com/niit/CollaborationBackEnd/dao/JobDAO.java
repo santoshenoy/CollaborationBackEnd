@@ -10,7 +10,7 @@ public interface JobDAO {
 
 	public void update(Job job);
 
-	public void delete(String id);
+	public void delete(int id);
 
 	public List<Job> list();
 

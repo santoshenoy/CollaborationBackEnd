@@ -13,12 +13,13 @@ public class JobTest {
 		JobDAO jobDAO = (JobDAO) context.getBean("jobDAO");
 		Job job = (Job) context.getBean("job");
 
-		job.setTitle("BLOG 1");
-		job.setDescription("fej");
-		job.setU_id("'RAM_002");
-		job.setStatus("feffe");
+		/*.setId(1);
+		job.setTitle("BLOG 2");
+		job.setDescription("fej1");
+		job.setU_id("'RAM_003");
+		job.setStatus("feffe1");*/
 
-		jobDAO.save(job);
+		jobDAO.delete(1);
 	}
 
 }

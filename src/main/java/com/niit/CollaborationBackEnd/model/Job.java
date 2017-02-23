@@ -21,7 +21,10 @@ public class Job extends BaseDomain {
 	private String title;
 	private String u_id;
 	private String description;
-
+	private Date dateTime;
+	private String qualification;
+	private String status;
+	
 	public int getId() {
 		return id;
 	}
@@ -78,8 +81,6 @@ public class Job extends BaseDomain {
 		this.status = status;
 	}
 
-	private Date dateTime;
-	private String qualification;
-	private String status;
+	
 
 }
