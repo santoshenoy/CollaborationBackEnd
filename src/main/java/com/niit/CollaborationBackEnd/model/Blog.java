@@ -1,8 +1,11 @@
 package com.niit.CollaborationBackEnd.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.stereotype.Component;
 
@@ -17,7 +20,25 @@ public class Blog extends BaseDomain {
 	private String description;
 	private String u_id;
 	private String status;
-	private String b_date;
+	private Date b_date;
+	@Transient
+	private String date2;
+
+	public String getDate2() {
+		return date2;
+	}
+
+	public void setDate2(String date2) {
+		this.date2 = date2;
+	}
+
+	public Date getB_date() {
+		return b_date;
+	}
+
+	public void setB_date(Date b_date) {
+		this.b_date = b_date;
+	}
 
 	public String getId() {
 		return id;
@@ -57,14 +78,6 @@ public class Blog extends BaseDomain {
 
 	public void setStatus(String status) {
 		this.status = status;
-	}
-
-	public String getB_date() {
-		return b_date;
-	}
-
-	public void setB_date(String b_date) {
-		this.b_date = b_date;
 	}
 
 }

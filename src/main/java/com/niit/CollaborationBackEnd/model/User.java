@@ -13,14 +13,13 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name = "c_user")
 @Component
-public class User extends BaseDomain
-{
+public class User extends BaseDomain {
 
 	@Id
 	private String id;
 	private String nam;
 	private String mail;
-	private String dob;
+	private Date dob;
 	private String mobile;
 	private String psswrd;
 	private char isOnline;
@@ -28,6 +27,8 @@ public class User extends BaseDomain
 	private String role;
 	private String Address;
 	private char status;
+	@Transient
+	private String date4;
 
 	public String getId() {
 		return id;
@@ -35,38 +36,6 @@ public class User extends BaseDomain
 
 	public void setId(String id) {
 		this.id = id;
-	}
-
-	public char getStatus() {
-		return status;
-	}
-
-	public void setStatus(char status) {
-		this.status = status;
-	}
-
-	public String getAddress() {
-		return Address;
-	}
-
-	public void setAddress(String address) {
-		Address = address;
-	}
-
-	public User() {
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yy-MM-dd HH:mm:ss");
-		Date date = new Date();
-
-		dob = dateFormat.format(date);
-		System.out.println("dateofbirth : " + dob);
-	}
-
-	public char getIsOnline() {
-		return isOnline;
-	}
-
-	public void setIsOnline(char isOnline) {
-		this.isOnline = isOnline;
 	}
 
 	public String getNam() {
@@ -77,38 +46,44 @@ public class User extends BaseDomain
 		this.nam = nam;
 	}
 
-	public String getmail() {
+	public String getMail() {
 		return mail;
 	}
 
-	public void setmail(String mail) {
+	public void setMail(String mail) {
 		this.mail = mail;
 	}
 
-	public String getmobile() {
-		return mobile;
-	}
-
-	public String getDob() {
+	public Date getDob() {
 		return dob;
 	}
 
-	public void setDob(String dob) {
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
 
-	public void setmobile(String mobile) {
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
-	
-	
 	public String getPsswrd() {
 		return psswrd;
 	}
 
 	public void setPsswrd(String psswrd) {
 		this.psswrd = psswrd;
+	}
+
+	public char getIsOnline() {
+		return isOnline;
+	}
+
+	public void setIsOnline(char isOnline) {
+		this.isOnline = isOnline;
 	}
 
 	public String getGender() {
@@ -125,6 +100,30 @@ public class User extends BaseDomain
 
 	public void setRole(String role) {
 		this.role = role;
+	}
+
+	public String getAddress() {
+		return Address;
+	}
+
+	public void setAddress(String address) {
+		Address = address;
+	}
+
+	public char getStatus() {
+		return status;
+	}
+
+	public void setStatus(char status) {
+		this.status = status;
+	}
+
+	public String getDate4() {
+		return date4;
+	}
+
+	public void setDate4(String date4) {
+		this.date4 = date4;
 	}
 
 }

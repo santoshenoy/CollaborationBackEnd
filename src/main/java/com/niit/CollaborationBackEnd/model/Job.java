@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.stereotype.Component;
 
@@ -24,7 +25,17 @@ public class Job extends BaseDomain {
 	private Date dateTime;
 	private String qualification;
 	private String status;
-	
+	@Transient
+	private String date1;
+
+	public String getDate1() {
+		return date1;
+	}
+
+	public void setDate1(String date1) {
+		this.date1 = date1;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -80,7 +91,5 @@ public class Job extends BaseDomain {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-
-	
 
 }

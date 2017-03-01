@@ -31,7 +31,7 @@ public class UserTest {
 		// user.setId("RAM_003");
 		// user.setNam("RAMESH");
 
-		user.setId("RAM_002");
+		/*user.setId("RAM_002");
 		user.setNam("SURESH");
 		user.setmail("hdhdhd@gmail.com");
 		user.setDob("24-10-2016");
@@ -43,7 +43,7 @@ public class UserTest {
 		user.setIsOnline('h');
 		user.setStatus('k');
 
-		userDAO.update(user);
+		userDAO.update(user);*/
 
 	}
 

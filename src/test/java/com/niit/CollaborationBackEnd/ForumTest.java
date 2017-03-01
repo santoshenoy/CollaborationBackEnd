@@ -15,13 +15,13 @@ public class ForumTest {
 		ForumDAO forumDAO = (ForumDAO) context.getBean("forumDAO");
 		Forum forum = (Forum) context.getBean("forum");
 		
-		/*forum.setId("FOR_001");
-		forum.setName("FORUM 2");
+		forum.setId("FOR_003");
+		forum.setName("FORUM 3");
 		forum.setDescription("fewdjnssav");
 		forum.setU_id("'RAM_004");
 		forum.setStatus("cjdisdfdsa");
-		forum.setF_date("24/10/2017");*/
+		//forum.setF_date("24/10/2017");
 		
-		forumDAO.delete("FOR_001");
+		forumDAO.save(forum);
 	}
 }
