@@ -16,5 +16,9 @@ public interface UserDAO {
 	public void delete(String id);
 
 	public List<User> list();
+	
+	public boolean validateUser(String id, String psswrd);
+	
+	public User getUser(String nam);
 
 }

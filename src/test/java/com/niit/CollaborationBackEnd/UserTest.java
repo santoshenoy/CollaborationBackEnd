@@ -31,10 +31,10 @@ public class UserTest {
 		// user.setId("RAM_003");
 		// user.setNam("RAMESH");
 
-		/*user.setId("RAM_002");
-		user.setNam("SURESH");
-		user.setmail("hdhdhd@gmail.com");
-		user.setDob("24-10-2016");
+		/*user.setId("SAN_001");
+		user.setNam("Santosh Shenoy");
+		user.setmail("santoshenoy@gmail.com");
+		user.setDob("10");
 		user.setmobile("2222222");
 		user.setPsswrd("jjdddkd");
 		user.setGender("M");
@@ -44,7 +44,22 @@ public class UserTest {
 		user.setStatus('k');
 
 		userDAO.update(user);*/
-
+		
+		/*boolean val = userDAO.validateUser("hdsbad", "cdhn");
+		if(val == true)
+		{
+			System.out.println("TRUE");
+		}
+		else
+		{
+			System.out.println("FALSE....");
+		}*/
+		
+		
+		user = userDAO.getUser("hdsbad");
+		System.out.println(user.getNam());
+		System.out.println(user.getId());
+		System.out.println(user.getPsswrd());
 	}
 
 }

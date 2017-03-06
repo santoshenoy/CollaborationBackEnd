@@ -47,4 +47,41 @@ public class UserDAOImpl implements UserDAO {
 	public void update(User user) {
 		sessionFactory.getCurrentSession().update(user);
 	}
+
+	@Transactional
+	public boolean validateUser(String id, String psswrd) {
+		try {
+			User user = sessionFactory.getCurrentSession().get(User.class, id);
+			if (user.getPsswrd().equals(psswrd)) {
+				//user.setErrorCode("200");
+				//user.setErrorMsg("User Found");
+				return true;
+			} else {
+				//user.setErrorCode("100");
+				//user.setErrorMsg("Password incorrect");
+				return false;
+			}
+		} catch (Exception ex) {
+			User user = new User();
+			//user.setErrorCode("100");
+			//user.setErrorMsg("ID not found in Database");
+			return false;
+		}
+	}
+	
+    @Transactional
+	public User getUser(String id) {
+		try {
+			User user = sessionFactory.getCurrentSession().get(User.class, id);
+			//user.setErrorCode("200");
+			//user.setErrorMsg("User Found");
+			return user;
+		} catch (Exception ex) {
+			User user = new User();
+			ex.printStackTrace();
+			//user.setErrorCode("404");
+			//user.setErrorMsg("User Not Found");
+			return null;
+		}
+	}
 }

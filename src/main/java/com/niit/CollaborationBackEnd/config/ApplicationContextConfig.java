@@ -50,7 +50,7 @@ public class ApplicationContextConfig {
 		// "org.hibernate.dialect.Oracle10gDialect");
 
 		sessionBuilder.setProperty("hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
-		sessionBuilder.setProperty("hibernate.hbm2ddl.auto", "update");
+		//sessionBuilder.setProperty("hibernate.hbm2ddl.auto", "update");
 		sessionBuilder.setProperty("hibernate.show_sql", "true");
 		sessionBuilder.addAnnotatedClass(User.class);
 		sessionBuilder.addAnnotatedClass(Blog.class);
@@ -64,6 +64,5 @@ public class ApplicationContextConfig {
 	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
 		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
 		return transactionManager;
-
 	}
 }
