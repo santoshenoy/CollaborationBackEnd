@@ -1,4 +1,6 @@
 com\niit\CollaborationBackEnd\ForumTest.class
+com\niit\CollaborationBackEnd\EventTest.class
 com\niit\CollaborationBackEnd\BlogTest.class
 com\niit\CollaborationBackEnd\UserTest.class
 com\niit\CollaborationBackEnd\JobTest.class
+com\niit\CollaborationBackEnd\FriendTest.class

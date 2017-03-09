@@ -15,7 +15,9 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.CollaborationBackEnd.model.Blog;
+import com.niit.CollaborationBackEnd.model.Event;
 import com.niit.CollaborationBackEnd.model.Forum;
+import com.niit.CollaborationBackEnd.model.Friend;
 import com.niit.CollaborationBackEnd.model.Job;
 import com.niit.CollaborationBackEnd.model.User;
 
@@ -56,6 +58,8 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Blog.class);
 		sessionBuilder.addAnnotatedClass(Job.class);
 		sessionBuilder.addAnnotatedClass(Forum.class);
+		sessionBuilder.addAnnotatedClass(Friend.class);
+		sessionBuilder.addAnnotatedClass(Event.class);
 		return sessionBuilder.buildSessionFactory();
 	}
 

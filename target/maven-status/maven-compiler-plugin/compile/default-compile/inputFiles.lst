@@ -1,10 +1,16 @@
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\User.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\EventDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\ForumDAOImpl.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\ForumDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\JobDAOImpl.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Event.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\UserDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\JobDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\config\ApplicationContextConfig.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\FriendDAO.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\EventDAOImpl.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\FriendDAOImpl.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Friend.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\BaseDomain.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\BlogDAOImpl.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Job.java
