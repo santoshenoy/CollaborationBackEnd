@@ -6,7 +6,7 @@ import com.niit.CollaborationBackEnd.model.Friend;
 
 public interface FriendDAO {
 	
-	public void save(Friend friend);
+	public boolean save(Friend friend);
 
 	public void update(Friend friend);
 
@@ -16,10 +16,14 @@ public interface FriendDAO {
 	
 	public void setOffline(String u_id);
 	
-	public List<Friend> getMyFriends(String u_id);
+	public List<String> getMyFriends(String u_id);
 	
 	public List<Friend> getFriendRequestsSentByMe(String u_id);
 	
 	public List<Friend> getNewFriendRequests(String f_id);
-
+	
+	public boolean accept(String userID, String friendID);
+	
+	public boolean reject(String userID, String friendID);
+	
 }

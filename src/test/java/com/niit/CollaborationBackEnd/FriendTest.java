@@ -1,5 +1,7 @@
 package com.niit.CollaborationBackEnd;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.niit.CollaborationBackEnd.dao.FriendDAO;
@@ -15,12 +17,17 @@ public class FriendTest {
 		FriendDAO friendDAO = (FriendDAO) context.getBean("friendDAO");
 		Friend friend = (Friend) context.getBean("friend");
 		
-		friend.setU_id("RAM_002");
-		friend.setF_id("RAHUL_002");
+		/*friend.setU_id("RAM_003");
+		friend.setF_id("RAHUL_003");
 		friend.setIsOnline("N");
-		friend.setStatus("A");
+		friend.setStatus("P");
 		
-		friendDAO.save(friend);
+		friendDAO.save(friend);*/
+		
+		List <String>l = friendDAO.getMyFriends("RAM_001");
+		
+		System.out.println(l);
+		
 	}
 
 }

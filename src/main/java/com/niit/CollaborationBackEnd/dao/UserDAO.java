@@ -19,6 +19,6 @@ public interface UserDAO {
 	
 	public boolean validateUser(String id, String psswrd);
 	
-	public User getUser(String nam);
+	public User getUser(String id);
 
 }
