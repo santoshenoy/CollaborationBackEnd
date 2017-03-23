@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.niit.CollaborationBackEnd.model.Blog;
 import com.niit.CollaborationBackEnd.model.Event;
+import com.niit.CollaborationBackEnd.model.FileUpload;
 import com.niit.CollaborationBackEnd.model.Forum;
 import com.niit.CollaborationBackEnd.model.Friend;
 import com.niit.CollaborationBackEnd.model.Job;
@@ -47,12 +48,10 @@ public class ApplicationContextConfig {
 	public SessionFactory getSessionFactory(DataSource dataSource) {
 		LocalSessionFactoryBuilder sessionBuilder = new LocalSessionFactoryBuilder(dataSource);
 		sessionBuilder.addProperties(getHibernateProperties());
-
 		// sessionBuilder.setProperties("hibernate.dialect",
 		// "org.hibernate.dialect.Oracle10gDialect");
-
 		sessionBuilder.setProperty("hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
-		//sessionBuilder.setProperty("hibernate.hbm2ddl.auto", "update");
+		// sessionBuilder.setProperty("hibernate.hbm2ddl.auto", "update");
 		sessionBuilder.setProperty("hibernate.show_sql", "true");
 		sessionBuilder.addAnnotatedClass(User.class);
 		sessionBuilder.addAnnotatedClass(Blog.class);
@@ -60,6 +59,7 @@ public class ApplicationContextConfig {
 		sessionBuilder.addAnnotatedClass(Forum.class);
 		sessionBuilder.addAnnotatedClass(Friend.class);
 		sessionBuilder.addAnnotatedClass(Event.class);
+		sessionBuilder.addAnnotatedClass(FileUpload.class);
 		return sessionBuilder.buildSessionFactory();
 	}
 

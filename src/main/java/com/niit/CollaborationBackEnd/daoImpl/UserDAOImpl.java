@@ -30,7 +30,7 @@ public class UserDAOImpl implements UserDAO {
 
 	@Transactional
 	public List<User> list() {
-		String hql = "from User";
+		String hql = "FROM User";
 		Query query = sessionFactory.getCurrentSession().createQuery(hql);
 		return query.list();
 	}

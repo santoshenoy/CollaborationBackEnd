@@ -1,5 +1,7 @@
 package com.niit.CollaborationBackEnd;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.niit.CollaborationBackEnd.dao.UserDAO;
@@ -56,10 +58,13 @@ public class UserTest {
 		}*/
 		
 		
-		user = userDAO.getUser("hdsbad");
+		/*user = userDAO.getUser("hdsbad");
 		System.out.println(user.getNam());
 		System.out.println(user.getId());
-		System.out.println(user.getPsswrd());
+		System.out.println(user.getPsswrd());*/
+		
+		List<User> li =  userDAO.list();
+		System.out.println(li.get(0).getAddress());
 	}
 
 }

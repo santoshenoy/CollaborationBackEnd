@@ -4,8 +4,10 @@ E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\d
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\ForumDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\JobDAOImpl.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Event.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\FileUpload.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\UserDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\JobDAO.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\FileUploadDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\config\ApplicationContextConfig.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\FriendDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\EventDAOImpl.java
@@ -15,6 +17,7 @@ E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\m
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\BlogDAOImpl.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Job.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Forum.java
+E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\FileUploadDAOImpl.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\model\Blog.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\dao\BlogDAO.java
 E:\workspace1\CollaborationBackEnd\src\main\java\com\niit\CollaborationBackEnd\daoImpl\UserDAOImpl.java
